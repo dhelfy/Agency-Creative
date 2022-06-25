@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    color: #1D1D1D;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.elipse-1 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, #FF8E8E 0%, #F62424 100%);
+    top: 287px;
+    right: -20px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.main-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 85vw;
+   height: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 72px;
+   margin-bottom: 72px;
+}
+
+.logo {
+    width: 136px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo__title {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    margin-left: 10px;
+}
+
+.logo__title_bold {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.main-header__navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.main-header__link {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.white-button {
+    border: 1px solid #377DFF;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 12px 50px;
+    color: #377DFF;
+    background-color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.home-section__title {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.01em;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.home-section__subtitle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #464646;
+    white-space: pre-line;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.blue-button {
+    background-color: #377DFF;
+    box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 12px 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    border: unset;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section__button-container {
+    text-align: center;
+}
