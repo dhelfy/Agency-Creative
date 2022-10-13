@@ -66,8 +66,6 @@
 .white-button {
     border: 1px solid #377DFF;
     border-radius: 24px;
-    width: 185px;
-    height: 50px;
     color: #377DFF;
     background-color: white;
     font-weight: 700;
@@ -86,67 +84,22 @@
     transition: all 0.5s;
 }
 
-.menu-button {
-    width: 1.5625rem;
-    height: 1.5625rem;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    display: none;
-}
-
-.menu-button__line {
-    background: #1D1D1D;
-    width: 0.75rem;
-    height: 0.125rem;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-}
-
-.menu-button__line::before,
-.menu-button__line::after {
-    content: '';
-    position: absolute;
-    background: #1D1D1D;
-    width: 1.125rem;
-    height: 0.125rem;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-    margin-left: -0.1875rem;
-}
-
-.menu-button__line::before {
-    transform: translateY(-0.4375rem);
-}
-
-.menu-button__line::after {
-    transform: translateY(0.4375rem);
-}
-
-.menu-button.open .menu-button__line {
-    transform: translateX(-0.4375rem);
-    background: transparent;
-}
-
-.menu-button.open .menu-button__line::before {
-    transform: rotate(45deg);
-}
-
-.menu-button.open .menu-button__line::after {
-    transform: rotate(-45deg);
+.header__white-button {
+    width: 185px;
+    height: 50px;
 }
 
 .main-content {
     text-align: center;
 }
 
-.main-content__title {
+.introduction-section__title {
     font-family: 'Nunito';
     font-weight: 800;
     font-size: calc(22px + 42 * (100vw / 1920));
 }
 
-.main-content__subtitle {
+.introduction-section__subtitle {
     font-family: 'Nunito';
     font-weight: 400;
     font-size: calc(12px + 8 * (100vw / 1920));
@@ -158,8 +111,6 @@
 }
 
 .blue-button {
-    width: 200px;
-    height: 50px;
     background: #377DFF;
     box-shadow: 0px 4px 8px rgba(55, 125, 255, 0.5);
     border-radius: 24px;
@@ -179,6 +130,11 @@
 
 .blue-button:not(:hover) {
     transition: all 0.5s;
+}
+
+.introduction-section__blue-button {
+    width: 200px;
+    height: 50px;
 }
 
 .container_relative {
@@ -218,12 +174,6 @@
     font-size: 24px;
 }
 
-.conference-pic {
-    margin-top: 8%;
-    max-width: 100%;
-    height: auto;
-}
-
 .ceo-card {
     display: flex;
     flex-direction: column;
@@ -241,12 +191,6 @@
     text-align: start;
 }
 
-.ceo-card__full-name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .ceo-card__flex-container {
     display: flex;
     align-items: center;
@@ -259,8 +203,12 @@
 }
 
 .ceo-card__full-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 6%;
 }
+
 
 .ceo-card__name {
     font-size: 10px;
@@ -274,12 +222,18 @@
     font-weight: 600;
 }
 
-.quote {
+.ceo-card__quote {
     margin-top: 8%;
     font-weight: 500;
     font-size: 10px;
     line-height: 14px;
     font-family: Nunito;
+}
+
+.conference-pic {
+    margin-top: 8%;
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 391px) {
@@ -306,7 +260,7 @@
         font-size: 12px;
     }
 
-    .main-content__subtitle {
+    .introduction-section__subtitle {
         margin-bottom: 20px;
     }
 
@@ -357,7 +311,7 @@
         font-size: 3px;
     }
 
-    .quote {
+    .ceo-card__quote {
         font-size: 5px;
         line-height: 6px;
     }
@@ -387,7 +341,7 @@
         font-size: 12px;
     }
 
-    .main-content__subtitle {
+    .introduction-section__subtitle {
         margin-bottom: 20px;
     }
 
@@ -448,7 +402,7 @@
         font-size: 5px;
     }
 
-    .quote {
+    .ceo-card__quote {
         font-size: 7px;
         line-height: 10px;
     }
@@ -467,15 +421,11 @@
         display: none;
     }
 
-    .menu-button {
-        display: flex;
-    }
-
     .elipse-2 {
         left: -0.5rem;
     }
 
-    .main-content__title {
+    .introduction-section__title {
         font-size: calc(22px + (42 + 42 * 0.7) * ((100vw - 320px) / 1920));
     }
 
